@@ -5,17 +5,18 @@ package:
 source:
   fn: ecmwf-api-client-python.tgz
   url: https://software.ecmwf.int/wiki/download/attachments/56664858/ecmwf-api-client-python.tgz
-  sha256: 423331f2ace3b247ff0d7db8c96952003136b5859ad0840a045c311ee857bcfb
+  sha256: c00b92987df74e122b7c190412dd482a69a79624d17b9f18eab45141a11b9762
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1000
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
-
   run:
     - python
 
@@ -25,7 +26,7 @@ test:
 
 about:
   home: https://software.ecmwf.int/wiki/display/WEBAPI 
-  license: Apache Licence Version 2.0
+  license: Apache 2.0
   summary: 'Python client for ECMWF web services API.'
 
 extra:
