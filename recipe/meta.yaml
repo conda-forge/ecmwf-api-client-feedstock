@@ -1,11 +1,18 @@
+{% set name = "ecmwf-api-client" %}
+{% set version = "1.5.6" %}
+
 package:
-  name: ecmwf-api-client
-  version: "1.4.2"
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: d92bfa59a900921dd0f06bfe8b720ba857d59ada1a811241fbbea35fcfdc1836
 
 build:
-  number: 1000
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install ecmwf-api-client"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -21,9 +28,11 @@ test:
 
 about:
   home: https://software.ecmwf.int/wiki/display/WEBAPI 
-  license: Apache 2.0
+  license: Apache-2.0
+  license_file: LICENSE
   summary: 'Python client for ECMWF web services API.'
 
 extra:
   recipe-maintainers:
     - Ohjeah
+    - avalentino

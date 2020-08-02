@@ -3,7 +3,7 @@ About ecmwf-api-client
 
 Home: https://software.ecmwf.int/wiki/display/WEBAPI
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD-3-Clause
 
