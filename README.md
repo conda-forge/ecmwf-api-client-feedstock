@@ -110,4 +110,5 @@ Feedstock Maintainers
 =====================
 
 * [@Ohjeah](https://github.com/Ohjeah/)
+* [@StephanSiemen](https://github.com/StephanSiemen/)
 
