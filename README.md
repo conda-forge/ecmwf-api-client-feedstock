@@ -5,11 +5,9 @@ Home: https://software.ecmwf.int/wiki/display/WEBAPI
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ecmwf-api-client-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python client for ECMWF web services API.
-
-
 
 Current build status
 ====================
@@ -117,5 +115,5 @@ Feedstock Maintainers
 =====================
 
 * [@Ohjeah](https://github.com/Ohjeah/)
-* [@StephanSiemen](https://github.com/StephanSiemen/)
+* [@avalentino](https://github.com/avalentino/)
 
