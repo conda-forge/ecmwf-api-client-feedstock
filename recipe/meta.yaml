@@ -1,5 +1,5 @@
 {% set name = "ecmwf-api-client" %}
-{% set version = "1.6.5" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1fc0eba27163686b7fba5da027cc5dc0a361f75b652508fa7805f50599368b1c
+  sha256: 1971a047c01cc50cfc893f13fdfa710cf56fb872f1c04685b13c6f1d18431164
 
 build:
   number: 0
